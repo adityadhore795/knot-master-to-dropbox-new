@@ -31,5 +31,5 @@ jobs:
           YOUTUBE_CHANNEL_URL: ${{ secrets.YOUTUBE_CHANNEL_URL }}
           DROPBOX_UPLOAD_PATH: ${{ secrets.DROPBOX_UPLOAD_PATH }}
           HASHTAGS: ${{ secrets.HASHTAGS }}
-          COOKIES_FILE_URL: ${{ secrets.COOKIES_FILE_URL }}  # Add this line to define the missing variable
+          COOKIES_FILE_URL: ${{ secrets.COOKIES_FILE_URL }}   # <-- Add this secret in your repo settings!
         run: python main.py
